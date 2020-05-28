@@ -1,0 +1,39 @@
+.picturepanel {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: -ms-fit-content;
+  width: fit-content;
+  /* max-width: 500px;
+  max-height: 300px; */
+  /* border: 2px solid silver; */
+  overflow: auto;
+  position: relative;
+}
+.picturepanel canvas { display: block; }
+.toolbar > * { margin-right: 5px; }
+
+body{
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media screen and(orientation:landscape) and (max-device-width:900px){
+  html{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    width:320px;/*Разрешение экрана iPhone*/
+    position: absolute;
+    top:100%;
+    left:0;
+  }
+}
